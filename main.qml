@@ -13,9 +13,12 @@ Window {
     property int counter:0
     property int access_flag:1
     signal test_signal(string input_string)
+    signal test_customsignal(string hrs_str,string  min_str)
+    signal test_retension_timeline(int hrs)
+
     StackView {
         id: stackview
-        initialItem: ""
+        initialItem: welcome_main
     }
     Rectangle {
         id:main_frame
@@ -35,7 +38,7 @@ Window {
             {
                 counter += 1
 
-                if (counter == 1)
+                if (counter == 2)
                 {
                     if (access_flag)
                     {

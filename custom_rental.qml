@@ -23,6 +23,8 @@ Window {
             height:100
             x:20;y:50
             property string custom_retension_cost : ""
+            property string custom_retension_hrs : ""
+            property string custom_retension_min : ""
             color:"#DDDDDD"
             Text {
                 x:2;y:2
@@ -55,7 +57,7 @@ Window {
                     validator: control.validator
                     inputMethodHints: Qt.ImhFormattedNumbersOnly
                     onTextChanged: {
-                        cutom_retension.custom_retension_cost = text
+                        cutom_retension.custom_retension_min = text
                     }
                 }
                 up.indicator: Rectangle {
@@ -99,7 +101,6 @@ Window {
             width:240
             height:100
             x:20;y:160
-            property string custom_retension_cost : ""
             color:"#DDDDDD"
             Text {
                 x:2;y:2
@@ -132,7 +133,7 @@ Window {
                     validator: control.validator
                     inputMethodHints: Qt.ImhFormattedNumbersOnly
                     onTextChanged: {
-                        cutom_retension.custom_retension_cost = text
+                        cutom_retension.custom_retension_hrs = text
                     }
                 }
                 up.indicator: Rectangle {
@@ -209,8 +210,7 @@ Window {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    test_signal(cutom_retension.custom_retension_cost)
-                    custom_rentalboook.close();
+                    test_customsignal(cutom_retension.custom_retension_hrs,cutom_retension.custom_retension_min)
                 }
             }
         }

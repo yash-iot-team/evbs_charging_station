@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 6.0.2, 2022-04-19T22:00:05. -->
+<!-- Written by QtCreator 6.0.2, 2022-06-03T15:13:30. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -118,16 +118,16 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/Users/Nayan.bhavsar/Documents/qml_pyside/main.py</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/Nayan.bhavsar/Documents/qml_pyside/main.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Nayan.bhavsar/Documents/qml_pyside/main.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/main.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/main.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/main.py</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{0eaa3a34-01b1-4b1f-8abe-663522b142e4}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\Nayan.bhavsar\Documents\qml_pyside\main.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\EVBS_Project\EVBS_REPOS\evbs_qt\evbs_charging_station\main.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/Nayan.bhavsar/Documents/qml_pyside</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -136,16 +136,16 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/Users/Nayan.bhavsar/Documents/qml_pyside/inr1.png</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/Nayan.bhavsar/Documents/qml_pyside/inr1.png</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Nayan.bhavsar/Documents/qml_pyside/inr1.png</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{0eaa3a34-01b1-4b1f-8abe-663522b142e4}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\Nayan.bhavsar\Documents\qml_pyside\inr1.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/inr.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/inr.png</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/inr.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{2afabd6f-1ea8-4b5a-a2e8-0d27dde2f942}</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\EVBS_Project\EVBS_REPOS\evbs_qt\evbs_charging_station\inr.png</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/Nayan.bhavsar/Documents/qml_pyside</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.2">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -154,16 +154,16 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/Users/Nayan.bhavsar/Documents/qml_pyside/inr.png</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/Nayan.bhavsar/Documents/qml_pyside/inr.png</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Nayan.bhavsar/Documents/qml_pyside/inr.png</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{0eaa3a34-01b1-4b1f-8abe-663522b142e4}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\Nayan.bhavsar\Documents\qml_pyside\inr.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/no.gif</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/no.gif</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/no.gif</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{451da8a0-9261-421f-bbee-22a6df31cbf8}</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\EVBS_Project\EVBS_REPOS\evbs_qt\evbs_charging_station\no.gif</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/Nayan.bhavsar/Documents/qml_pyside</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.3">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -172,16 +172,16 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/Users/Nayan.bhavsar/Documents/qml_pyside/qr.png</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/Nayan.bhavsar/Documents/qml_pyside/qr.png</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Nayan.bhavsar/Documents/qml_pyside/qr.png</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{0eaa3a34-01b1-4b1f-8abe-663522b142e4}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\Nayan.bhavsar\Documents\qml_pyside\qr.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/wifi.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/wifi.png</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/wifi.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{233ea692-317d-4765-bd8d-b50f71ff33f5}</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\EVBS_Project\EVBS_REPOS\evbs_qt\evbs_charging_station\wifi.png</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/Nayan.bhavsar/Documents/qml_pyside</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.4">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -190,16 +190,16 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/Users/Nayan.bhavsar/Documents/qml_pyside/access_denied.gif</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/Nayan.bhavsar/Documents/qml_pyside/access_denied.gif</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Nayan.bhavsar/Documents/qml_pyside/access_denied.gif</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{0eaa3a34-01b1-4b1f-8abe-663522b142e4}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\Nayan.bhavsar\Documents\qml_pyside\access_denied.gif</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/yes.gif</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/yes.gif</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/yes.gif</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{e52c999e-f3af-476d-8190-ba62390654d4}</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\EVBS_Project\EVBS_REPOS\evbs_qt\evbs_charging_station\yes.gif</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/Nayan.bhavsar/Documents/qml_pyside</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.5">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -208,16 +208,16 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/Users/Nayan.bhavsar/Documents/qml_pyside/rfid_gif.gif</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/Nayan.bhavsar/Documents/qml_pyside/rfid_gif.gif</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Nayan.bhavsar/Documents/qml_pyside/rfid_gif.gif</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{0eaa3a34-01b1-4b1f-8abe-663522b142e4}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\Nayan.bhavsar\Documents\qml_pyside\rfid_gif.gif</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/removebsu.gif</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/removebsu.gif</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/removebsu.gif</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{7bb7e0d0-31c8-4a32-b227-77d6d476eff6}</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\EVBS_Project\EVBS_REPOS\evbs_qt\evbs_charging_station\removebsu.gif</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/Nayan.bhavsar/Documents/qml_pyside</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.6">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -226,16 +226,16 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/Users/Nayan.bhavsar/Documents/qml_pyside/removebsu.gif</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/Nayan.bhavsar/Documents/qml_pyside/removebsu.gif</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Nayan.bhavsar/Documents/qml_pyside/removebsu.gif</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{0eaa3a34-01b1-4b1f-8abe-663522b142e4}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\Nayan.bhavsar\Documents\qml_pyside\removebsu.gif</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/inr1.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/inr1.png</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/inr1.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{ae50b31f-552e-41ef-9947-6cc26882dd3b}</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\EVBS_Project\EVBS_REPOS\evbs_qt\evbs_charging_station\inr1.png</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/Nayan.bhavsar/Documents/qml_pyside</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.7">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -244,18 +244,54 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/Users/Nayan.bhavsar/Documents/qml_pyside/wifi.png</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/Nayan.bhavsar/Documents/qml_pyside/wifi.png</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Nayan.bhavsar/Documents/qml_pyside/wifi.png</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{0eaa3a34-01b1-4b1f-8abe-663522b142e4}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\Nayan.bhavsar\Documents\qml_pyside\wifi.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/rfid.gif</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/rfid.gif</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/rfid.gif</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{5789c050-8315-4660-b16f-61b81a4a0da2}</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\EVBS_Project\EVBS_REPOS\evbs_qt\evbs_charging_station\rfid.gif</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/Nayan.bhavsar/Documents/qml_pyside</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station</value>
    </valuemap>
-   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">8</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.8">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/qr.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/qr.png</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/qr.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{879665e4-b0f8-477d-b75f-a5a1693cb8b1}</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\EVBS_Project\EVBS_REPOS\evbs_qt\evbs_charging_station\qr.png</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.9">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/load.gif</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/load.gif</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station/load.gif</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{42f8fffc-3f98-4781-a762-7d759ec61dd2}</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\EVBS_Project\EVBS_REPOS\evbs_qt\evbs_charging_station\load.gif</value>
+    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/EVBS_Project/EVBS_REPOS/evbs_qt/evbs_charging_station</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">10</value>
   </valuemap>
  </data>
  <data>

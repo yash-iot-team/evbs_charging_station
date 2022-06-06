@@ -63,7 +63,7 @@ Window {
             interval: 800; running: true; repeat: true
             onTriggered:
             {
-                counter -= 1
+                counter -= 5
                 if (counter <= 0)
                 {
                     user_logout_page.close();

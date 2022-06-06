@@ -14,6 +14,7 @@ Window {
         width: 800
         height: 480
         color: "#020537"
+
         Rectangle {
             id:slot_1
             width: 190
@@ -21,10 +22,37 @@ Window {
             x:3;y:280
             radius: 5
             property int slot_1_flag: 0
-            property bool isGreen: true
-            color: isGreen ? "#99e401" : "#29293d"
             border.color: "black"
             border.width: 2
+            property string s1_status
+            state: slot_1.s1_status
+
+            states: [
+                State {
+                    name: "Empty"
+                    PropertyChanges { target: slot_1; color: "#29293d"}
+                },
+                State {
+                    name: "Charging"
+                    PropertyChanges { target: slot_1; color: "#99e401"}
+                },
+                State {
+                    name: "Fault"
+                    PropertyChanges { target: slot_1; color: "red"}
+                },
+                State {
+                    name: "Prebooked"
+                    PropertyChanges { target: slot_1; color: "grey"}
+                },
+                State {
+                    name: "Available"
+                    PropertyChanges { target: slot_1; color: "#004d00"}
+                },
+                State {
+                    name: "Discharging"
+                    PropertyChanges { target: slot_1; color: "orange"}
+                }
+            ]
             Text {
                 id: slot_1_Text
                 x:10;y:20
@@ -55,6 +83,7 @@ Window {
                         color:"white"
                         font.family: "montserrat"
                         text: model.display
+
                      }
                 }
             }
@@ -62,7 +91,7 @@ Window {
                 id: slot_status
                 anchors.fill: parent
                 anchors.topMargin: 10
-                anchors.leftMargin: 100
+                anchors.leftMargin: 90
                 model : model_slot1_status
                 delegate: Rectangle {
                     id : slot1_status_delegate
@@ -71,12 +100,15 @@ Window {
                     color: "transparent"
                     x:30;y:5
                     Text {
-                        anchors.horizontalCenter: parent
+                        anchors.fill: parent
                         font.bold: true
                         font.pixelSize: 16
                         color:"white"
                         font.family: "montserrat"
-                        text: model.display
+                        text: slot_1.s1_status
+                        Component.onCompleted: {
+                            slot_1.s1_status = model.display
+                        }
                      }
                 }
             }
@@ -85,17 +117,12 @@ Window {
                 anchors.fill: parent
 
                 onClicked: {
-                    console.log("in slot1 click");
                     slot_1.slot_1_flag=1;
                     test_signal("AAAA")
                 }
             }
-            states: State {
-                name: "brighter"; when: mouseArea.pressed
-                PropertyChanges { target: slot_1; color: "steelblue" }
-            }
             transitions: Transition {
-                ColorAnimation { duration: 500 }
+                ColorAnimation { duration: 300 }
             }
         }
         Rectangle {
@@ -105,10 +132,36 @@ Window {
             x:205;y:280
             radius: 5
             property int slot_2_flag: 0
-            property bool isGreensl2: true
-            color: isGreensl2 ? "#99e401" : "#29293d"
             border.color: "black"
             border.width: 2
+            property string s2_status
+            state: slot_2.s2_status
+            states: [
+                State {
+                    name: "Empty"
+                    PropertyChanges { target: slot_2; color: "#29293d"}
+                },
+                State {
+                    name: "Charging"
+                    PropertyChanges { target: slot_2; color: "#99e401"}
+                },
+                State {
+                    name: "Fault"
+                    PropertyChanges { target: slot_2; color: "red"}
+                },
+                State {
+                    name: "Prebooked"
+                    PropertyChanges { target: slot_2; color: "grey"}
+                },
+                State {
+                    name: "Available"
+                    PropertyChanges { target: slot_2; color: "#004d00"}
+                },
+                State {
+                    name: "Discharging"
+                    PropertyChanges { target: slot_2; color: "orange"}
+                }
+            ]
             Text {
                 id: slot_2_Text
                 x:10;y:20
@@ -132,7 +185,7 @@ Window {
                     color: "transparent"
                     x:30;y:20
                     Text {
-                        anchors.horizontalCenter: parent
+                        anchors.fill: parent
                         font.bold: true
                         font.pixelSize: 14
                         color:"white"
@@ -145,7 +198,7 @@ Window {
                     id: slot_2_status
                     anchors.fill: parent
                     anchors.topMargin: 10
-                    anchors.leftMargin: 100
+                    anchors.leftMargin: 90
                     model : model_slot2_status
                     delegate: Rectangle {
                         id : slot2_status_delegate
@@ -154,12 +207,15 @@ Window {
                         color: "transparent"
                         x:30;y:5
                         Text {
-                            anchors.horizontalCenter: parent
+                            anchors.fill: parent
                             font.bold: true
                             font.pixelSize: 16
                             color:"white"
                             font.family: "montserrat"
-                            text: model.display
+                            text: slot_2.s2_status
+                            Component.onCompleted: {
+                                slot_2.s2_status = model.display
+                            }
                          }
                     }
                 }
@@ -171,12 +227,8 @@ Window {
                         test_signal("BBBB")
                     }
                 }
-                states: State {
-                    name: "brighter"; when: mouseArea_slot_2.pressed
-                    PropertyChanges { target: slot_2; color: "steelblue" }
-                }
                 transitions: Transition {
-                    ColorAnimation { duration: 500 }
+                    ColorAnimation { duration: 300 }
                 }
         }
         Rectangle {
@@ -185,19 +237,37 @@ Window {
             height: 90
             x:405;y:280
             radius: 5
-            color: "#99e401"
             border.color: "black"
             border.width: 2
-            gradient: Gradient {
-                GradientStop {
-                    SequentialAnimation on color {
-                        loops: Animation.Infinite
-                        ColorAnimation { from: "#80c342"; to: "#001600"; duration: 5000 }
-                        ColorAnimation { from: "#001600"; to: "#80c342"; duration: 5000 }
-                    }
+            property int slot_3_flag: 0
+            property string s3_status
+            state: slot_3.s3_status
+            states: [
+                State {
+                    name: "Empty"
+                    PropertyChanges { target: slot_3; color: "#29293d"}
+                },
+                State {
+                    name: "Charging"
+                    PropertyChanges { target: slot_3; color: "#99e401"}
+                },
+                State {
+                    name: "Fault"
+                    PropertyChanges { target: slot_3; color: "red"}
+                },
+                State {
+                    name: "Prebooked"
+                    PropertyChanges { target: slot_3; color: "grey"}
+                },
+                State {
+                    name: "Available"
+                    PropertyChanges { target: slot_3; color: "#004d00"}
+                },
+                State {
+                    name: "Discharging"
+                    PropertyChanges { target: slot_3; color: "orange"}
                 }
-            }
-
+            ]
             Text {
                 id: slot_3_Text
                 x:10;y:20
@@ -234,7 +304,7 @@ Window {
                 id: slot_3_status
                 anchors.fill: parent
                 anchors.topMargin: 10
-                anchors.leftMargin: 100
+                anchors.leftMargin: 90
                 model : model_slot3_status
                 delegate: Rectangle {
                     id : slot3_status_delegate
@@ -243,26 +313,28 @@ Window {
                     color: "transparent"
                     x:30;y:5
                     Text {
-                        anchors.horizontalCenter: parent
+                        anchors.fill: parent
                         font.bold: true
                         font.pixelSize: 16
                         color:"white"
                         font.family: "montserrat"
-                        text: model.display
+                        text: slot_3.s3_status
+                        Component.onCompleted: {
+                            slot_3.s3_status = model.display
+                        }
                      }
                 }
             }
             MouseArea {
                 id:mouseArea_slot_3
                 anchors.fill: parent
-                onClicked: test_signal("CCCC")
-            }
-            states: State {
-                name: "brighter"; when: mouseArea_slot_3.pressed
-                PropertyChanges { target: slot_3; color: "steelblue" }
+                onClicked: {
+                    slot_3.slot_3_flag=1
+                    test_signal("CCCC")
+                }
             }
             transitions: Transition {
-                ColorAnimation { duration: 500 }
+                ColorAnimation { duration: 300 }
             }
         }
         Rectangle {
@@ -271,9 +343,37 @@ Window {
             height: 90
             x:605;y:280
             radius: 5
-            color: "#29293d"
             border.color: "black"
             border.width: 2
+            property string s4_status
+            property int slot_4_flag: 0
+            state: slot_4.s4_status
+            states: [
+                State {
+                    name: "Empty"
+                    PropertyChanges { target: slot_4; color: "#29293d"}
+                },
+                State {
+                    name: "Charging"
+                    PropertyChanges { target: slot_4; color: "#99e401"}
+                },
+                State {
+                    name: "Fault"
+                    PropertyChanges { target: slot_4; color: "red"}
+                },
+                State {
+                    name: "Prebooked"
+                    PropertyChanges { target: slot_4; color: "grey"}
+                },
+                State {
+                    name: "Available"
+                    PropertyChanges { target: slot_4; color: "#004d00"}
+                },
+                State {
+                    name: "Discharging"
+                    PropertyChanges { target: slot_4; color: "orange"}
+                }
+            ]
             Text {
                 id: slot_4_Text
                 x:10;y:20
@@ -310,7 +410,7 @@ Window {
                 id: slot_4_status
                 anchors.fill: parent
                 anchors.topMargin: 10
-                anchors.leftMargin: 100
+                anchors.leftMargin: 90
                 model : model_slot4_status
                 delegate: Rectangle {
                     id : slot4_status_delegate
@@ -319,26 +419,28 @@ Window {
                     color: "transparent"
                     x:30;y:5
                     Text {
-                        anchors.horizontalCenter: parent
+                        anchors.fill: parent
                         font.bold: true
                         font.pixelSize: 16
                         color:"white"
                         font.family: "montserrat"
-                        text: model.display
-                     }
+                        text: slot_4.s4_status
+                        Component.onCompleted: {
+                            slot_4.s4_status = model.display
+                        }
+                    }
                 }
             }
             MouseArea {
                 id:mouseArea_slot_4
                 anchors.fill: parent
-                onClicked: test_signal("DDDD")
-            }
-            states: State {
-                name: "brighter"; when: mouseArea_slot_4.pressed
-                PropertyChanges { target: slot_4; color: "steelblue" }
+                onClicked: {
+                    slot_4.slot_4_flag=1
+                    test_signal("DDDD")
+                }
             }
             transitions: Transition {
-                ColorAnimation { duration: 500 }
+                ColorAnimation { duration: 300 }
             }
         }
         Rectangle {
@@ -347,9 +449,38 @@ Window {
             height: 90
             x:5;y:380
             radius: 5
-            color: "red"
             border.color: "black"
             border.width: 2
+            property string s5_status
+            property int slot_5_flag: 0
+            state: slot_5.s5_status
+            states: [
+                State {
+                    name: "Empty"
+                    PropertyChanges { target: slot_5; color: "#29293d"}
+                },
+                State {
+                    name: "Charging"
+                    PropertyChanges { target: slot_5; color: "#99e401"}
+                },
+                State {
+                    name: "Fault"
+                    PropertyChanges { target: slot_5; color: "red"}
+                },
+                State {
+                    name: "Prebooked"
+                    PropertyChanges { target: slot_5; color: "grey"}
+                },
+                State {
+                    name: "Available"
+                    PropertyChanges { target: slot_5; color: "#004d00"}
+                },
+                State {
+                    name: "Discharging"
+                    PropertyChanges { target: slot_5; color: "orange"}
+                }
+            ]
+
             Text {
                 id: slot_5_Text
                 x:10;y:20
@@ -386,7 +517,7 @@ Window {
                 id: slot_5_status
                 anchors.fill: parent
                 anchors.topMargin: 10
-                anchors.leftMargin: 120
+                anchors.leftMargin: 90
                 model : model_slot5_status
                 delegate: Rectangle {
                     id : slot5_status_delegate
@@ -395,26 +526,28 @@ Window {
                     color: "transparent"
                     x:30;y:5
                     Text {
-                        anchors.horizontalCenter: parent
+                        anchors.fill: parent
                         font.bold: true
                         font.pixelSize: 16
                         color:"white"
                         font.family: "montserrat"
-                        text: model.display
-                     }
+                        text: slot_5.s5_status
+                        Component.onCompleted: {
+                            slot_5.s5_status = model.display
+                        }
+                    }
                 }
             }
             MouseArea {
                 id:mouseArea_slot_5
                 anchors.fill: parent
-                onClicked: test_signal("EEEE")
-            }
-            states: State {
-                name: "brighter"; when: mouseArea_slot_5.pressed
-                PropertyChanges { target: slot_5; color: "steelblue" }
+                onClicked: {
+                    slot_5.slot_5_flag =1
+                    test_signal("EEEE")
+                }
             }
             transitions: Transition {
-                ColorAnimation { duration: 500 }
+                ColorAnimation { duration: 300 }
             }
         }
         Rectangle {
@@ -423,9 +556,38 @@ Window {
             height: 90
             x:205;y:380
             radius: 5
-            color: "grey"
             border.color: "black"
             border.width: 2
+            property string s6_status
+            property int slot_6_flag: 0
+            state: slot_6.s6_status
+            states: [
+                State {
+                    name: "Empty"
+                    PropertyChanges { target: slot_6; color: "#29293d"}
+                },
+                State {
+                    name: "Charging"
+                    PropertyChanges { target: slot_6; color: "#99e401"}
+                },
+                State {
+                    name: "Fault"
+                    PropertyChanges { target: slot_6; color: "red"}
+                },
+                State {
+                    name: "Prebooked"
+                    PropertyChanges { target: slot_6; color: "grey"}
+                },
+                State {
+                    name: "Available"
+                    PropertyChanges { target: slot_6; color: "#004d00"}
+                },
+                State {
+                    name: "Discharging"
+                    PropertyChanges { target: slot_6; color: "orange"}
+                }
+            ]
+
             Text {
                 id: slot_6_Text
                 x:10;y:20
@@ -462,7 +624,7 @@ Window {
                 id: slot_6_status
                 anchors.fill: parent
                 anchors.topMargin: 10
-                anchors.leftMargin: 80
+                anchors.leftMargin: 90
                 model : model_slot6_status
                 delegate: Rectangle {
                     id : slot6_status_delegate
@@ -471,27 +633,29 @@ Window {
                     color: "transparent"
                     x:30;y:5
                     Text {
-                        anchors.horizontalCenter: parent
+                        anchors.fill: parent
                         font.bold: true
                         font.pixelSize: 16
                         color:"white"
                         font.family: "montserrat"
-                        text: model.display
-                     }
+                        text: slot_6.s6_status
+                        Component.onCompleted: {
+                            slot_6.s6_status = model.display
+                        }
+                    }
                 }
             }
             MouseArea {
                 id:mouseArea_slot_6
                 anchors.fill: parent
                 propagateComposedEvents : False
-                onClicked: test_signal("FFFF")
-            }
-            states: State {
-                name: "brighter"; when: mouseArea_slot_6.pressed
-                PropertyChanges { target: slot_6; color: "steelblue" }
+                onClicked: {
+                    slot_6.slot_6_flag=1
+                    test_signal("FFFF")
+                }
             }
             transitions: Transition {
-                ColorAnimation { duration: 500 }
+                ColorAnimation { duration: 300 }
             }
         }
         Rectangle {
@@ -500,9 +664,38 @@ Window {
             height: 90
             x:405;y:380
             radius: 5
-            color: "orange"
             border.color: "black"
             border.width: 2
+            property string s7_status
+            property int slot_7_flag: 0
+            state: slot_7.s7_status
+            states: [
+                State {
+                    name: "Empty"
+                    PropertyChanges { target: slot_7; color: "#29293d"}
+                },
+                State {
+                    name: "Charging"
+                    PropertyChanges { target: slot_7; color: "#99e401"}
+                },
+                State {
+                    name: "Fault"
+                    PropertyChanges { target: slot_7; color: "red"}
+                },
+                State {
+                    name: "Prebooked"
+                    PropertyChanges { target: slot_7; color: "grey"}
+                },
+                State {
+                    name: "Available"
+                    PropertyChanges { target: slot_7; color: "#004d00"}
+                },
+                State {
+                    name: "Discharging"
+                    PropertyChanges { target: slot_7; color: "orange"}
+                }
+            ]
+
             Text {
                 id: slot_7_Text
                 x:10;y:20
@@ -526,7 +719,7 @@ Window {
                     color: "transparent"
                     x:30;y:20
                     Text {
-                        anchors.horizontalCenter: parent
+                        anchors.fill: parent
                         font.bold: true
                         font.pixelSize: 14
                         font.family: "montserrat"
@@ -539,7 +732,7 @@ Window {
                 id: slot_7_status
                 anchors.fill: parent
                 anchors.topMargin: 10
-                anchors.leftMargin: 80
+                anchors.leftMargin: 90
                 model : model_slot7_status
                 delegate: Rectangle {
                     id : slot7_status_delegate
@@ -553,21 +746,22 @@ Window {
                         font.pixelSize: 16
                         color:"white"
                         font.family: "montserrat"
-                        text: model.display
-                     }
+                        text: slot_7.s7_status
+                        Component.onCompleted: {
+                            slot_7.s7_status = model.display
+                        }                     }
                 }
             }
             MouseArea {
                 id:mouseArea_slot_7
                 anchors.fill: parent
-                onClicked: test_signal("GGGG")
-            }
-            states: State {
-                name: "brighter"; when: mouseArea_slot_7.pressed
-                PropertyChanges { target: slot_7; color: "steelblue" }
+                onClicked: {
+                    slot_7.slot_7_flag=1
+                    test_signal("GGGG")
+                }
             }
             transitions: Transition {
-                ColorAnimation { duration: 500 }
+                ColorAnimation { duration: 300 }
             }
         }
         Rectangle {
@@ -576,19 +770,38 @@ Window {
             height: 90
             x:605;y:380
             radius: 5
-
-            color: "#006622"
             border.color: "black"
             border.width: 2
-            gradient: Gradient {
-                GradientStop {
-                    SequentialAnimation on color {
-                        loops: Animation.Infinite
-                        ColorAnimation { from: "#80c342"; to: "#001600"; duration: 5000 }
-                        ColorAnimation { from: "#001600"; to: "#80c342"; duration: 5000 }
-                    }
+            property string s8_status
+            property int slot_8_flag: 0
+            state: slot_8.s8_status
+            states: [
+                State {
+                    name: "Empty"
+                    PropertyChanges { target: slot_8; color: "#29293d"}
+                },
+                State {
+                    name: "Charging"
+                    PropertyChanges { target: slot_8; color: "#99e401"}
+                },
+                State {
+                    name: "Fault"
+                    PropertyChanges { target: slot_8; color: "red"}
+                },
+                State {
+                    name: "Prebooked"
+                    PropertyChanges { target: slot_8; color: "grey"}
+                },
+                State {
+                    name: "Available"
+                    PropertyChanges { target: slot_8; color: "#004d00"}
+                },
+                State {
+                    name: "Discharging"
+                    PropertyChanges { target: slot_8; color: "orange"}
                 }
-            }
+            ]
+
             Text {
                 id: slot_8_Text
                 x:10;y:20
@@ -624,7 +837,7 @@ Window {
                 id: slot_8_status
                 anchors.fill: parent
                 anchors.topMargin: 10
-                anchors.leftMargin: 100
+                anchors.leftMargin: 90
                 model : model_slot8_status
                 delegate: Rectangle {
                     id : slot8_status_delegate
@@ -633,28 +846,28 @@ Window {
                     color: "transparent"
                     x:30;y:5
                     Text {
-                        anchors.horizontalCenter: parent
+                        anchors.fill: parent
                         font.bold: true
                         font.pixelSize: 16
                         color:"white"
                         font.family: "montserrat"
-                        text: model.display
-                     }
+                        text: slot_8.s8_status
+                        Component.onCompleted: {
+                            slot_8.s8_status = model.display
+                        }
+                    }
                 }
             }
             MouseArea {
                 id:mouseArea_slot_8
                 anchors.fill: parent
                 onClicked: {
+                    slot_8.slot_8_flag=1
                     test_signal("HHHH")
                 }
             }
-            states: State {
-                name: "brighter"; when: mouseArea_slot_8.pressed
-                PropertyChanges { target: slot_8; color: "steelblue" }
-            }
             transitions: Transition {
-                ColorAnimation { duration: 500 }
+                ColorAnimation { duration: 300 }
             }
         }
 
@@ -681,9 +894,9 @@ Window {
                     text: "Book"
                 }
                 onClicked:{
-                    var component = Qt.createComponent("book_summary.qml")
-                    var book_summary_window    = component.createObject()
-                    book_summary_window.show()
+                   var component1 = Qt.createComponent("book_summary.qml")
+                   var book_summary_window    = component1.createObject()
+                   book_summary_window.show()
                 }
             }
             RoundButton  {
@@ -789,21 +1002,22 @@ Window {
                 height:90
                 x:130;y:35
                 color: "#29293d"
-                radius: 5
+                radius:5
                 Text {
                     id: voltage
                     x:45;y:8
                     anchors.centerIn: parent.verticalCenter
-                    font.family: "montserrat"
                     text: qsTr("V")
                     color: "white"
-                    font.pixelSize: 14
+                    font.family: "montserrat"
+                    font.pixelSize: 16
                 }
                 TableView {
                     id: summary_voltage
                     anchors.fill: parent
+                    topMargin: header.implicitHeight
                     anchors.margins: 45
-                    anchors.leftMargin: 25
+                    anchors.leftMargin: 22
                     model : model_voltage_summary
                     delegate: Rectangle {
                         id : datavoltage
@@ -812,11 +1026,11 @@ Window {
                         color: "transparent"
                         x:30;y:20
                         Text {
-                            anchors.centerIn: parent
-                            font.bold: true
-                            font.pixelSize: 18
-                            color:"white"
-                            text: model.display
+                             anchors.centerIn: parent
+                             font.bold: true
+                             font.pixelSize: 18
+                             color:"white"
+                             text: model.display
                          }
                     }
                 }
@@ -1130,7 +1344,7 @@ Window {
                        Text {
                             anchors.centerIn: parent
                             font.bold: true
-                            font.pixelSize: 14
+                            font.pixelSize: 18
                             color: "white"
                             text: model.display
                         }
@@ -1315,7 +1529,7 @@ Window {
                     model : model_cell8_temp_sensor
                     delegate: Rectangle {
                         id : temp_send_module_8
-                        color: "#00bfff"
+                        color: "#29293d"
                         radius : 5
                         implicitHeight: 30
                         implicitWidth: 45

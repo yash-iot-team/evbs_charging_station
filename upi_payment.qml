@@ -65,18 +65,40 @@ Window {
                     var component = Qt.createComponent("remove_bsu.qml")
                     var remove_bsu_window    = component.createObject()
                     remove_bsu_window.show()
-                    upi_payment.close();
-                    payment_summarypage.close();
-                    book_summarypage.close()
-                    test_signal("proceed")
                     if(slot_1.slot_1_flag){
-                        slot_1.isGreen = !slot_1.isGreen ;
+                        slot_1.s1_status = "empty"
                         slot_1.slot_1_flag=0
                     }
                     if(slot_2.slot_2_flag){
-                        slot_2.isGreensl2 = !slot_2.isGreensl2;
+                        slot_2.s2_status = "empty"
                         slot_2.slot_2_flag=0
                     }
+                    if(slot_3.slot_3_flag){
+                        slot_3.s3_status = "empty"
+                        slot_3.slot_3_flag=0
+                    }
+                    if(slot_4.slot_4_flag){
+                        slot_4.s4_status = "empty"
+                        slot_4.slot_4_flag=0
+                    }
+                    if(slot_5.slot_5_flag){
+                        slot_5.s5_status = "empty"
+                        slot_5.slot_5_flag=0
+                    }
+                    if(slot_6.slot_6_flag){
+                        slot_6.s6_status = "empty"
+                        slot_6.slot_6_flag=0
+                    }
+                    if(slot_7.slot_7_flag){
+                        slot_7.s7_status = "empty"
+                        slot_7.slot_7_flag=0
+                    }
+                    if(slot_8.slot_8_flag){
+                        slot_8.s8_status = "empty"
+                        slot_8.slot_8_flag=0
+                    }
+                    upi_payment.close();
+                    test_signal("proceed")
                 }
             }
         }

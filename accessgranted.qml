@@ -30,7 +30,7 @@ Window {
             {
                 counter += 1
 
-                if (counter == 1)
+                if (counter == 2)
                 {
                     stackview.push("evbs_main_dashboard.qml")
                     access_granted.close()

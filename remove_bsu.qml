@@ -83,7 +83,7 @@ Window {
             onTriggered:
             {
                 counter += 1
-                if (counter == 5)
+                if (counter == 20)
                 {
                     var component = Qt.createComponent("logout_page.qml")
                     var logout_page_window    = component.createObject()

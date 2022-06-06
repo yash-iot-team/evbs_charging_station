@@ -104,7 +104,7 @@ Window {
                 id:mouseArea
                 anchors.fill: parent
                 onClicked: {
-                    test_signal("4")
+                    test_retension_timeline(4)
                     four_hrs.isGreen = !four_hrs.isGreen
                 }
             }
@@ -137,7 +137,7 @@ Window {
                 id:mouseArea_8
                 anchors.fill: parent
                 onClicked: {
-                    test_signal("8")
+                    test_retension_timeline(8)
                     eight_hrs.isGreen = !eight_hrs.isGreen
                 }
             }
@@ -170,7 +170,7 @@ Window {
                 id:mouseArea_12
                 anchors.fill: parent
                 onClicked: {
-                    test_signal("12")
+                    test_retension_timeline(12)
                     twelve_hrs.isGreen = !twelve_hrs.isGreen
                 }
             }
@@ -203,7 +203,7 @@ Window {
                 id:mouseArea_16
                 anchors.fill: parent
                 onClicked: {
-                    test_signal("16")
+                    test_retension_timeline(16)
                     sixteen_hrs.isGreen = !sixteen_hrs.isGreen
                 }
             }
@@ -237,7 +237,7 @@ Window {
                 id:mouseArea_20
                 anchors.fill: parent
                 onClicked: {
-                    test_signal("20")
+                    test_retension_timeline(20)
                     twenty_hrs.isGreen = !twenty_hrs.isGreen
                 }
             }
@@ -270,7 +270,7 @@ Window {
                 id:mouseArea_24
                 anchors.fill: parent
                 onClicked: {
-                    test_signal("24")
+                    test_retension_timeline(24)
                     twentyfour_hrs.isGreen = !twentyfour_hrs.isGreen
                 }
             }

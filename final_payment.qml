@@ -363,7 +363,8 @@ Window {
             var component = Qt.createComponent("upi_payment.qml")
             var upi_payment_window    = component.createObject()
             upi_payment_window.show()
-
+            payment_summarypage.close();
+            book_summarypage.close()
         }
     }
     RoundButton {

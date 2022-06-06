@@ -1,3 +1,3 @@
 {
-    "files": ["load.gif","selected_slot_details.qml","accessdenied.qml","logout_page.qml","user_logout.qml","main.py","book_summary.qml","inr1.png","main.qml","access_denied.gif","rfid.gif","rmslot.png","remove_bsu.qml","final_payment.qml","qr.png","accessgranted.qml","inr.png","removebsu.gif","upi_payment.qml","evbs_main_dashboard.qml","celsius_icon.png","wifi.png","custom_rental.qml","no.gif","yes.gif"]
+    "files": ["final_payment.qml","accessdenied.qml","qr.png","access_denied.gif","rmslot.png","accessgranted.qml","user_logout.qml","celsius_icon.png","load.gif","selected_slot_details.qml","book_summary.qml","main.py","inr.png","upi_payment.qml","logout_page.qml","no.gif","custom_rental.qml","main.qml","evbs_main_dashboard.qml","wifi.png","remove_bsu.qml","yes.gif","removebsu.gif","inr1.png","rfid.gif"]
 }
